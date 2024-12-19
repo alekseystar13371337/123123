@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мой сайт</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="topHead">
+            <div class="logo">
+                <img src="profile.png" alt="Logo" />
+            </div>
+
+            <div class="user-info">
+                <p>Группа: "ЭФБО-06-23"</p>
+                <p>Старшинов Алексей</p>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="file:///home/v415admin/Desktops/Desktop1/Старшинов/index%20(1).html#" target="_self">Главная</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Выпадающий список
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="file:///home/v415admin/Desktops/Desktop1/%D0%A1%D1%82%D0%B0%D1%80%D1%88%D0%B8%D0%BD%D0%BE%D0%B2/index%20(1)%20-%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.html">Первый семестр</a></li>
+                                <li><a class="dropdown-item" href="#">Второй семестр</a></li>
+                                <li><a class="dropdown-item" href="file:///home/v415admin/Desktops/Desktop1/%D0%A1%D1%82%D0%B0%D1%80%D1%88%D0%B8%D0%BD%D0%BE%D0%B2/index%20(2).html">Услуги</a></li>
+                                <li><a class="dropdown-item" href="#">Авторизация</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <div id="text-content" class="Text">
+        <div class="Profiling">
+            <div>
+                <h1>Добро пожаловать на мой сайт!</h1>
+                <p>
+                    Меня зовут Старшинов Алексей Дмитриевич и я начинающий
+                    специалист по веб-разработке!
+                </p>
+
+            </div>
+            <body>
+                <div id="text-content" class="Text">
+                    <div class="Profiling">
+                        <img id="studentPhoto" src="https://goodle.com/student.jpg" alt="Фото студента">
+                    </div>
+                </div>
+
+                <script>
+                    // Добавляем обработчик события click на заголовок H1
+                    document.getElementById('mainHeader').addEventListener('click', function () {
+                        alert('Вы кликнули на заголовок - так держать!');
+                    });
+                </script>
+        </div>
+        <script>
+            // Добавляем обработчик события click на параграф текста
+            document.getElementById('mainParagraph').addEventListener('click', function () {
+                this.classList.toggle('clicked');
+            });
+        </script>
+        <style>
+            /* Анимация для заголовка H1 */
+            #mainHeader {
+                font-size: 24px;
+                transition: font-size 0.3s;
+            }
+
+                #mainHeader:hover {
+                    font-size: 30px;
+                }
+
+            /* Анимация для параграфа текста */
+            #mainParagraph {
+                background-color: white;
+                transition: background-color 0.5s;
+            }
+
+                #mainParagraph.clicked {
+                    background-color: lightblue;
+                }
+            /* Анимация для фотографии студента */
+            #studentPhoto {
+                width: 150px;
+                height: 150px;
+                transition: transform 0.5s;
+            }
+
+                #studentPhoto:hover {
+                    transform: rotate(360deg);
+                }
+        </style>
+        <script>
+            // Добавляем обработчик события mouseover на фотографию студента
+            document.getElementById('studentPhoto').addEventListener('mouseover', function () {
+                this.style.width = '165px'; // Увеличиваем ширину на 10%
+                this.style.height = '165px'; // Увеличиваем высоту на 10%
+            });
+
+            // Добавляем обработчик события click на фотографию студента
+            document.getElementById('studentPhoto').addEventListener('click', function () {
+                this.src = 'https://google.com/teacher.jpg'; // Заменяем фото студента на фото преподавателя
+            });
+
+            // Добавляем обработчик события dblclick на фотографию студента
+            document.getElementById('studentPhoto').addEventListener('dblclick', function () {
+                alert('Не налегай, у меня не так много любимых преподавателей');
+            });
+        </script>
+</body>
+</html>
+
+
+<h2>Фронтенд</h2>
+<p>
+    Фронтенд (или клиентская часть) - это то, что видит пользователь.
+    Он включает в себя все визуальные элементы веб-сайта или приложения: кнопки, формы, изображения и текст.
+    Фронтенд разработчики используют языки разметки и стилизации,
+    такие как HTML, CSS и JavaScript, чтобы создавать
+    интерактивные и привлекательные интерфейсы. Основная задача фронтенда
+    — обеспечить удобство использования и эстетическую привлекательность.
+</p>
+<iframe width="720"
+        height="405"
+        src="https://rutube.ru/play/embed/a35b218d983f7b860586addfbb61e974"
+        frameBorder="0"
+        allow="clipboard-write; autoplay"
+        webkitAllowFullScreen
+        mozallowfullscreen
+        allowFullScreen></iframe>
+<h2>Бэкенд</h2>
+<p>
+    Бэкенд (или серверная часть) — это "за кулисами" веб-приложения.
+    Он отвечает за обработку данных, управление пользователями и взаимодействие с базами данных.
+    Бэкенд разработчики используют языки программирования, такие как Python, Ruby, Java или РНР, а также фреймворки и базы данных для создания логики приложения. 
+    Основная задача бэкенда - обеспечить
+    стабильную работу приложения и безопасность данных.
+</p>
+<p>
+    ответ на вопрос:
+
+    CSS анимация более производительна и легка в управлении, идеально подходит для простых и стандартных анимаций.
+    JavaScript анимация предоставляет большую гибкость и контроль, что делает ее лучшим выбором для сложных и интерактивных анимаций.
+
+
+
+</p>
+
+
+<iframe width="720"
+        height="405"
+        src="https://rutube.ru/play/embed/a35b218d983f7b860586addfbb61e974"
+        frameBorder="0"
+        allow="clipboard-write; autoplay"
+        webkitAllowFullScreen
+        mozallowfullscreen
+        allowFullScreen></iframe>
+<!-- Footer Section -->
+<footer>
+    <p>© Старшинов Алексей Дмитриевич, 2024</p>
+</footer>
+  </body>
+</html>
